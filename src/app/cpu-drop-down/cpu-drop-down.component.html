@@ -1,0 +1,9 @@
+<p>cpu-drop-down works!</p>
+
+<label>CPU</label>
+<select name="cpus">
+    <option value="null">CPUs</option>
+    <option *ngFor="let cpu of lstcpu">
+        {{ cpu.name }}
+    </option>
+</select>

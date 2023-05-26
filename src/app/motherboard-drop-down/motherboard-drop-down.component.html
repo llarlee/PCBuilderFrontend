@@ -1,0 +1,14 @@
+<p>motherboard-drop-down works!</p>
+{{ lstMotherboards | json }}
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Price</th>
+    </tr>
+    <tr *ngFor="let mobo of lstMotherboards">
+        <td>{{mobo.id }}</td>
+        <td>{{ mobo.name }}</td>
+        <td> {{ mobo.price }}</td>
+    </tr>
+</table>

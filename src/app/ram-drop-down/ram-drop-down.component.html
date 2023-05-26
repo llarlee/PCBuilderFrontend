@@ -1,0 +1,8 @@
+<p>ram-drop-down works!</p>
+<label>RAM</label>
+<select name="rams">
+    <option value="null">RAM</option>
+    <option *ngFor="let ram of lstram">
+        {{ ram.name }}
+    </option>
+</select>
